@@ -1,0 +1,5 @@
+  DriverManager的静态方法loadInitialDrivers,进入loadInitialDrivers方法。方法的开头就是获取jdbc.drivers这个系统变量,此处涉及java的安全框架(沙箱)。
+  测试jdbc.driver这个系统变量是否存在
+
+    在使用jdbc连接MySQL的数据库时，获取数据库连接，需要使用DriverManager类的静态方法获取数据库连接DriverManager.getConnection(url,user,password)，在DirverManager中，静态块
+    JDBC 4.0以后就不用再classForName
