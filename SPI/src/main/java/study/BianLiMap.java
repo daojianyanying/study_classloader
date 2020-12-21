@@ -1,4 +1,4 @@
-package java;
+package study;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -31,11 +31,16 @@ public class BianLiMap {
 
     public static void travelBy_iterator(HashMap<String,String> map){
         Iterator<Map.Entry<String, String>> entries = map.entrySet().iterator();
+//        while(entries.hasNext()){
+//            Map.Entry<String, String> entry = entries.next();
+//            String key = entry.getKey();
+//            String value = entry.getValue();
+//            System.out.println(key+":"+value);
+//        }
+
         while(entries.hasNext()){
-            Map.Entry<String, String> entry = entries.next();
-            String key = entry.getKey();
-            String value = entry.getValue();
-            System.out.println(key+":"+value);
+
+            System.out.println(entries.next());
         }
     }
 
